@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <a class="navbar-brand" href="#">My Portfolio</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      
+      
+
+  <main>
+    <section id="about" class="bg-danger text-white py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="noor-photo.jpeg" alt="Profile Image" class="img-fluid" style="max-height: 200px;">
+            </div>
+            <div class="col-md-8">
+              <h2>Noor Fahad</h2>
+              <p>
+                Hi, I'm Noor Fahad, a passionate developer with expertise in various technologies. I have experience in Node.js, PHP, React, Angular, Android, and Swift development.
+              </p>
+              <p>
+                I enjoy creating robust and scalable web and mobile applications. With my skills in different programming languages and frameworks, I strive to deliver high-quality solutions that meet clients' needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="projects" class="bg-warning py-5">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvamVjdHN8ZW58MHx8MHx8fDA%3D&w=1000&q=80" alt="Project 1" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Project 1</h5>
+                  <p class="card-text">A description of project 1.</p>
+                  <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvamVjdHN8ZW58MHx8MHx8fDA%3D&w=1000&q=80" alt="Project 2" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Project 2</h5>
+                  <p class="card-text">A description of project 2.</p>
+                  <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+              </div>
+            </div>
+            <!-- Add more project cards here -->
+          </div>
+        </div>
+      </section>
+      
+
+      <section id="contact" class="py-5">
+        <div class="container">
+          <h2>Contact Details</h2>
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </section>
+      
+  </main>
+
+  <footer>
+    <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+  </footer>
+</body>
+<script>
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll > 0) {
+      $("nav.navbar").addClass("scrolled");
+    } else {
+      $("nav.navbar").removeClass("scrolled");
+    }
+  });
+</script>
+
+</html>
